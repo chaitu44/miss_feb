@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+	.div1{
+		
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#mainDiv{
+		border: 1px solid black;
+		width: 600px;
+		height: 600px;
+		position: absolute;
+		left: 200px;
+		top: 20px;
+	}
+	#center{
+		background-color: grey;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		left: 190px;
+		top: 190px;
+	}
+	.rotate{
+		background-color: green;
+		position: absolute;
+		text-align: center;
+		width: 100px;
+		height: 100px;
+	}
+	.div1{
+		left: 50px;
+		top: 50px;
+	}
+	.div2{
+		left: 250px;
+		top: 0px;
+	}
+	.div3{
+		left: 450px;
+		top: 50px;
+	}
+	.div4{
+		left: 500px;
+		top: 250px;
+	}
+	.div5{
+		left: 450px;
+		top: 450px;
+	}
+	.div6{
+		left: 250px;
+		top: 500px;
+	}
+	.div7{
+		left: 50px;
+		top: 450px;
+	}
+	.div8{
+		left: 0px;
+		top: 250px;
+	}
+	</style>
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="jquery.keyframe-0.2.2.js"></script>
+	<script src="jquery.easing.1.3.js"></script>
+	<title>Happy Budday</title>
+</head>
+<body>
+	<div id="mainDiv">
+		<div id="center"></div>
+		<div class="rotate div1">1</div>
+		<div class="rotate div2">2</div>
+		<div class="rotate div3">3</div>
+		<div class="rotate div4">4</div>
+		<div class="rotate div5">5</div>
+		<div class="rotate div6">6</div>
+		<div class="rotate div7">7</div>
+		<div class="rotate div8">8</div>
+	</div>
+</body>
+
+<script>
+
+function rotation(){
+	console.log("inside");
+	$(".div1").keyframe({
+	1000: {
+		left: 250,
+		top: 0
+	},
+	2000: {
+		left: 450,
+		top: 50
+	},
+	3000: {
+		top: 250,
+		left: 500
+	},
+	4000: {
+		top: 450,
+		left: 450
+	},
+	5000: {
+		left: 250,
+		top: 500
+	},
+	6000: {
+		left: 50,
+		top: 450
+	},
+	7000: {
+		left: 0,
+		top: 250
+	},
+	8000: {
+		top: 50,
+		left: 50
+	}
+});
+
+//div2
+$(".div2").keyframe({
+	1000: {
+		left: 450,
+		top: 50
+	},
+	2000: {
+		top: 250,
+		left: 500
+	},
+	3000: {
+		top: 450,
+		left: 450
+	},
+	4000: {
+		left: 250,
+		top: 500
+	},
+	5000: {
+		left: 50,
+		top: 450
+	},
+	6000: {
+		left: 0,
+		top: 250
+	},
+	7000: {
+		top: 50,
+		left: 50
+	},
+	8000: {
+		left: 250,
+		top: 0
+	}
+});
+//div3
+$(".div3").keyframe({
+	1000: {
+		top: 250,
+		left: 500
+	},
+	2000: {
+		top: 450,
+		left: 450
+	},
+	3000: {
+		left: 250,
+		top: 500
+	},
+	4000: {
+		left: 50,
+		top: 450
+	},
+	5000: {
+		left: 0,
+		top: 250
+	},
+	6000: {
+		top: 50,
+		left: 50
+	},
+	7000: {
+		left: 250,
+		top: 0
+	},
+	8000: {
+		left: 450,
+		top: 50
+	}
+});
+//div4
+$(".div4").keyframe({
+	1000: {
+		top: 450,
+		left: 450
+	},
+	2000: {
+		left: 250,
+		top: 500
+	},
+	3000: {
+		left: 50,
+		top: 450
+	},
+	4000: {
+		left: 0,
+		top: 250
+	},
+	5000: {
+		top: 50,
+		left: 50
+	},
+	6000: {
+		left: 250,
+		top: 0
+	},
+	7000: {
+		left: 450,
+		top: 50
+	},
+	8000: {
+		top: 250,
+		left: 500
+	}
+});
+//div5
+$(".div5").keyframe({
+	1000: {
+		left: 250,
+		top: 500
+	},
+	2000: {
+		left: 50,
+		top: 450
+	},
+	3000: {
+		left: 0,
+		top: 250
+	},
+	4000: {
+		top: 50,
+		left: 50
+	},
+	5000: {
+		left: 250,
+		top: 0
+	},
+	6000: {
+		left: 450,
+		top: 50
+	},
+	7000: {
+		top: 250,
+		left: 500
+	},
+	8000: {
+		top: 450,
+		left: 450
+	}
+});
+//div6
+$(".div6").keyframe({
+	1000: {
+		left: 50,
+		top: 450
+	},
+	2000: {
+		left: 0,
+		top: 250
+	},
+	3000: {
+		top: 50,
+		left: 50
+	},
+	4000: {
+		left: 250,
+		top: 0
+	},
+	5000: {
+		left: 450,
+		top: 50
+	},
+	6000: {
+		top: 250,
+		left: 500
+	},
+	7000: {
+		top: 450,
+		left: 450
+	},
+	8000: {
+		left: 250,
+		top: 500
+	}
+});
+//div7
+$(".div7").keyframe({
+	1000: {
+		left: 0,
+		top: 250
+	},
+	2000: {
+		top: 50,
+		left: 50
+	},
+	3000: {
+		left: 250,
+		top: 0
+	},
+	4000: {
+		left: 450,
+		top: 50
+	},
+	5000: {
+		top: 250,
+		left: 500
+	},
+	6000: {
+		top: 450,
+		left: 450
+	},
+	7000: {
+		left: 250,
+		top: 500
+	},
+	8000: {
+		left: 50,
+		top: 450
+	}
+});
+//div8
+$(".div8").keyframe({
+	1000: {
+		top: 50,
+		left: 50
+	},
+	2000: {
+		left: 250,
+		top: 0
+	},
+	3000: {
+		left: 450,
+		top: 50
+	},
+	4000: {
+		top: 250,
+		left: 500
+	},
+	5000: {
+		top: 450,
+		left: 450
+	},
+	6000: {
+		left: 250,
+		top: 500
+	},
+	7000: {
+		left: 50,
+		top: 450
+	},
+	8000: {
+		left: 0,
+		top: 250
+	}
+});
+
+};
+
+rotation();
+
+setInterval(rotation,8000);
+
+/*setInterval(rotation(),5000);*/
+
+
+/*$("#center").click(function(){
+
+$(".div1").animate({
+	left: "500px"
+},500, function(){
+});
+});*/
+
+/*_nAxisX = 290;
+_nAxisY = 290;
+_nRadius = 200;
+_nStart = 200;
+
+
+$(".div1").animate({
+	path : new $.path.arc({
+		center : [ 290, 290],
+		radius : 200,
+		start : 200,
+		end : 200,
+		dir : 1
+	})
+}, 1, "swing", function() {
+});*/
+</script>
+</html>
